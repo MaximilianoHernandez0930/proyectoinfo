@@ -27,6 +27,9 @@
         <li><a href="#sisdem">Sistema Decimal</a></li>
         <li><a href="#conver1">Conversión Binario a Decimal</a></li>
         <li><a href="#conver2">Conversión Decimal a Binario</a></li>
+        <li><a href="#sishex">Sistema Hexadecimal</a></li>
+        <li><a href="#converhex">Conversión Hexadecimal a Binario y Decimal</a></li>
+        <li><a href="#converbinhex">Conversión Binario y Decimal a Hexadecimal</a></li>
     </ol>
     <p id="sisteman"></p>
     <h2 class="titulo">¿Qué es un sistema numerico?</h2>
@@ -54,10 +57,18 @@
     <h2 class="titulo">Conversión Decimal a Binario</h2>
     <p>Un método para realizar la conversión de decimal a binario, es la división repetida. Se requiere dividir el número decimal entre 2 y que se escriban los residuos después de cada división hasta que se obtenga el cociente de 0. El primer residuo es LSB (Least Significant Bit) y el último MSB (Most Significant Bit)</p>
     <img src="./imagenes/WhatsApp Image 2025-05-16 at 23-compressed.jpg" alt="ejercicio2" height="270" width="370">
+    <p id="sishex"></p>
     <h2 class="titulo">Sistema Hexadecimal</h2>
     <p>Su uso actual está muy vinculado a la infórmatica y a los sistemas computacionales, pues las computadoras suelen utilizar el byte u octeto como unidad básica de memoria. Su base es 16 porque suenta con esta una cantidad de símbolos para expresar sus valores. El conjunto de símbolos hexadecimales es: 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F (las letras de el abecedario en este sistema empieza con A equivalente a 10 en decimal, luego B=11, C=12 y así sucesivamente hasta llegar a F equivalente a 15).</p>
+    <p id="converhex"></p>
     <h2 class="titulo">Coversión Hexadecimal a Binario y Decimal</h2>
-    <img src="./imagenes/WhatsApp Image 2025-05-17 at 10-compressed.jpg" alt="ejercicio3" height="290" width="370"> 
+    <img src="./imagenes/WhatsApp Image 2025-05-17 at 10-compressed.jpg" alt="ejercicio3" height="310" width="370"> 
+    <p>Como podemos ver, para convertir un número hexadecimal a decimal se tiene que conocer la ubicación de los elementos, dependiendo de su posición la potencia de la base que es 16 cambiara, esto de derecha a izquierda, por ejemplo el 3 esta en la 2da posición (también se cuenta la posición 0, esta es la última), la potencia a la que 16 será elevada sera a la 2, para posteriormente multiplicarse por ese 2 (también se incluye la potencia 0), así con cada elemento para luego hacer la suma de todas estas operaciones</p>
+    <p>Para hacer la conversión a binario, primero se tiene que hacer la conversión a decimal, tienendo el valor en decimal simplemente se siguen los pasos anteriormente mencionados, ir a la<a href="#conver2">Conversión decimal a binario</a></p>
+    <p id="converbinhex"></p>
+    <h2 class="titulo">Conversión Binario y Decimal a Hexadecimal</h2>
+    <img src="./imagenes/WhatsApp Image 2025-05-18 at 00.15.50.jpeg" alt="ejercicio4" height="270" width="370">
+    <p>Como podemos ver, es necesario convertir el número binario a decimal para después pasarlo a hexadecimal (<a href="#conver1">Lección aqui</a>), una vez teniendo el número decimal (con ayuda de la lección anterior) lo que sigue es pasar de decimal a hexadecimal, en el ejemplo la suma de los números binarios da 1001, este número debe dividirse entre 16, en la primera división el resultado es 62 con residuo de 9, este último es nuestro primer valor hexadecimal, (es el LSB), luego volvemos a dividir 62 entre 9, y nos da 3 con un residuo de 14, el 14 es equivalente a E en hexadecimal, ahí tenemos nuestro otro elemento, y finalmente 3 entre 16, da un resultado de 0 con resiudo de 3 y este es el MSB o el primer elemento, osea que 1111101001 (binario) paso a 1001 (decimal) y acabo en 3E9 (hexadecimal)</p>
     <p id="final">
     <a href="#inicio">Ir al inicio</a>
     <a href="unidad2.html" class="links">Ir a la siguiente unidad</a> 
